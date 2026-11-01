@@ -14,6 +14,14 @@ This is a running machine. Read this before anything else.
 - Speed and incline buttons only work during a running workout, step 0.5 mph / 1%, and are capped at 11.5 mph and -3% to 12% before anything is sent.
 - **Use at your own risk.** This can void your warranty, and a factory reset or an iFit update can undo all of it.
 
+## Network security
+
+- **iFit's motor service is open to your whole Wi-Fi.** GlassOS listens on port 54321 on every network interface, and the client certificate it accepts is public (QZ ships it). Anyone on the same network who has it can start the belt and change speed and incline. That's how iFit built it, not something this app adds, but keep it in mind.
+- **Keep the treadmill on a network only you control.** No guest Wi-Fi, shared apartment or office networks, or networks where you don't trust every device.
+- **With eru removed, ADB stays on after restarts** (port 5555). A new computer still has to be approved with an on-screen prompt at the console. Never approve an ADB prompt you didn't start yourself.
+- The app's status page (port 8765) is read-only and accepts no commands, but anyone on your network can read it, including your Private DNS hostname if you set one.
+- To turn ADB off when you're done: Android Settings > Developer options > USB debugging off.
+
 ## What it does
 
 - **Home screen:** big tiles for your streaming apps (no iFit apps), plus Settings and a Maintenance tile.
