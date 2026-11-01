@@ -1,0 +1,1 @@
+Put `client_cert.pem` and `client_key.pem` here, copied from QZ's `nordictrack-build-grpc` branch (https://github.com/cagnulein/qdomyos-zwift). They're ignored by git and get packed into the APK by `app/build.ps1`.

@@ -1,0 +1,1 @@
+Put QZ's GlassOS `.proto` files here (package `com.ifit.glassos`, from https://github.com/cagnulein/qdomyos-zwift), keeping their folder layout (e.g. `workout/SpeedService.proto`). Only the scripts in `glassos/` need them; the app doesn't.

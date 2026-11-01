@@ -1,0 +1,16 @@
+# Domains to block in NextDNS (Denylist) or AdGuard DNS (User rules) for the treadmill.
+# Blocking a domain there also blocks its subdomains (e.g. api.ifit.com).
+# Do NOT block amazonaws.com or cloudfront.net as a whole: Netflix/Crunchyroll use them.
+
+# iFit: updates, account, content, ads, membership nags
+ifit.com
+ifit.cn
+ifit-mobile.s3.amazonaws.com
+ifit-mobile-test.s3.amazonaws.com
+ifit-wolf.s3.amazonaws.com
+
+# Analytics / feature flags / crash reporting built into the iFit apps
+amplitude.com
+launchdarkly.com
+umeng.com
+umengcloud.com

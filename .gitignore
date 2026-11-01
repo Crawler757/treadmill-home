@@ -1,0 +1,16 @@
+# Build output and signing keys
+app/build/
+*.keystore
+*.jks
+*.apk
+
+# Not ours to redistribute: get these from QZ (see README)
+glassos/certs/*
+!glassos/certs/README.md
+glassos/proto/*
+!glassos/proto/README.md
+
+# Local notes and logs
+logs/
+*.log
+CLAUDE.md
